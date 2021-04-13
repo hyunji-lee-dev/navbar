@@ -1,0 +1,139 @@
+/* Global */
+:root {
+  /* Color */
+  --text-color: #000000;
+  --accent-color: #fbd786;
+
+  /* Font size */
+  --font-large: 1.5rem;
+  --font-medium: 1.125rem;
+
+  /* Size */
+  --size-spacing: 0.5em 0.75em;
+  --size-border-radius: 4px;
+}
+
+/* Universal */
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Open Sans', sans-serif;
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+  color: var(--text-color);
+}
+
+ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+button {
+  background: none;
+  border: none;
+  outline: none;
+  cursor: pointer;
+}
+
+/* Navbar */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: var(--size-spacing);
+  background: -webkit-linear-gradient(to right, #f7797d, #fbd786, #c6ffdd);
+  background: linear-gradient(to right, #f7797d, #fbd786, #c6ffdd);
+}
+
+/* Logo */
+.navbar__logo {
+  font-size: var(--font-large);
+}
+
+.logo__icon {
+  color: var(--accent-color);
+}
+
+.logo__title {
+  color: var(--text-color);
+}
+
+/* Menu */
+.navbar__menu {
+  display: flex;
+  font-size: var(--font-medium);
+}
+
+.menu__item {
+  padding: var(--size-spacing);
+}
+
+.menu__item:hover {
+  background: var(--accent-color);
+  border-radius: var(--size-border-radius);
+}
+
+/* Search */
+.navbar__search {
+  display: flex;
+  width: 15%;
+}
+
+.search__input {
+  width: 100%;
+  font-size: var(--font-medium);
+}
+
+.search__btn {
+  font-size: var(--font-medium);
+}
+
+/* Toggle button */
+.navbar__toggle-btn {
+  display: none;
+  position: absolute;
+  top: 0.6rem;
+  right: 0.75rem;
+  padding: 0;
+  color: var(--accent-color);
+  font-size: var(--font-large);
+}
+
+/* 48rem 이하의 스크린 */
+@media screen and (max-width: 48rem) {
+  .navbar {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .navbar__menu {
+    display: none;
+    flex-direction: column;
+    width: 100%;
+    text-align: center;
+  }
+
+  .navbar__menu a {
+    display: block;
+  }
+
+  .navbar__search {
+    display: none;
+    width: 80%;
+    margin: auto;
+  }
+
+  .navbar__toggle-btn {
+    display: block;
+  }
+
+  .navbar__menu.open,
+  .navbar__search.open {
+    display: flex;
+  }
+}

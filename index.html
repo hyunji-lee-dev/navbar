@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Navbar</title>
+    <script
+      src="https://kit.fontawesome.com/da8ce40f6b.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <script src="main.js" defer></script>
+  </head>
+  <body>
+    <nav class="navbar">
+      <a href="#" class="navbar__logo">
+        <i class="fas fa-bug logo__icon"></i>
+        <span class="logo__title">FunCoding</span>
+      </a>
+      <ul class="navbar__menu">
+        <li class="menu__item"><a href="#">HTML</a></li>
+        <li class="menu__item"><a href="#">CSS</a></li>
+        <li class="menu__item"><a href="#">JavaScript</a></li>
+        <li class="menu__item"><a href="#">React</a></li>
+        <li class="menu__item"><a href="#">TypeScript</a></li>
+      </ul>
+      <div class="navbar__search">
+        <input type="search" class="search__input" name="search" />
+        <button class="search__btn"><i class="fas fa-search"></i></button>
+      </div>
+      <button class="navbar__toggle-btn">
+        <i class="fas fa-bars"></i>
+      </button>
+    </nav>
+  </body>
+</html>
