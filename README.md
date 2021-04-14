@@ -1,6 +1,6 @@
 # 반응형 Navbar
 
-HTM+CSS 실습 목적으로 만든 반응형 navbar 👉
+HTML+CSS 실습 목적으로 만든 반응형 navbar 👉
 [Live Demo](https://hyunji-lee-dev.github.io/navbar/)
 
 ## 사용기술
